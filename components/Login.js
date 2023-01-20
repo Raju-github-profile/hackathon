@@ -22,7 +22,7 @@ const Login = ({ setIsLogin }) => {
         }
     }
     return (
-        <div className="transition-all ease-out duration-200 flex min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8 ">
+        <div className="transition-all mt-[-5vh] ease-out duration-200 flex min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8 ">
             <div className="w-full max-w-md space-y-8 shadow-md p-5 py-14">
                 <div>
                     <img className="mx-auto h-40 w-auto" src="https://github.com/pandeyprashant123-coder/krishi_bazar/blob/main/src/images/logo.png?raw=true" alt="Your Company" />

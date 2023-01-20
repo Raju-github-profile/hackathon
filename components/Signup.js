@@ -39,7 +39,7 @@ const Signup = ({ setIsLogin }) => {
         }
     }
     return (
-        <div className="transition-all duration-150 ease-out flex min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8 shadow-md ">
+        <div className="transition-all mt-[-14vh] duration-150 ease-out flex min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8 shadow-md ">
             <div className="w-full max-w-md space-y-8 p-7 shadow-lg py-14">
                 <div>
                     <img className="mx-auto h-40 w-auto" src="https://github.com/pandeyprashant123-coder/krishi_bazar/blob/main/src/images/logo.png?raw=true" alt="Your Company" />
@@ -73,7 +73,7 @@ const Signup = ({ setIsLogin }) => {
                     </div>
                     <div className="flex items-center justify-between">
                         <div className="text-sm">
-                            <p href="#" onClick={addMyLocation} className="font-medium bg-slate-200 text-indigo-600 hover:text-indigo-500">Add Location</p>
+                            <p href="#" onClick={addMyLocation} className="font-medium hover:bg-slate-300 bg-slate-200 text-indigo-600 hover:text-indigo-500">Add Location</p>
                         </div>
                     </div>
                     <div>

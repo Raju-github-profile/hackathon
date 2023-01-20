@@ -46,8 +46,8 @@ export default function Home() {
           if (command === 'introduce me') {
             alert('i received command')
           }
-          if (command === 'order') {
-
+          if (command === 'ordernow') {
+            
           }
           if (command === 'about page') {
             router.push('/about')

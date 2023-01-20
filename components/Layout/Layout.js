@@ -90,9 +90,3 @@ const Layout = ({ children }) => {
     )
 }
 export default Layout
-
-
-// import { collection, query, where, getDocs } from "firebase/firestore";
-// import { useRouter } from 'next/router';
-// import { Slider } from '../slider/slider';
-
