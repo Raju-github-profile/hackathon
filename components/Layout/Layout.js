@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { auth } from "../../firebase/index"
 import { onAuthStateChanged } from "firebase/auth";
 import { useSelector, useDispatch } from 'react-redux'
@@ -8,10 +8,11 @@ import { Toaster } from 'react-hot-toast';
 import Navbar from '../Navbar/Navbar';
 import { MessengerChat } from "react-messenger-chat-plugin";
 const pageID = '108679325425567'
+import { Slider } from '../slider/slider';
+
 
 const Layout = ({ children }) => {
     const state = useSelector((state) => state.Slice1)
-    console.log({ state })
     const dispatch = useDispatch()
     useEffect(() => {
         try {
@@ -21,7 +22,6 @@ const Layout = ({ children }) => {
                     const data = { email: user.email, uid: user.uid }
                     dispatch(signIn(data))
                 } else {
-                    // console.log({ user })
                     dispatch(signOut())
                 }
             })
@@ -33,15 +33,26 @@ const Layout = ({ children }) => {
     if (!state.auth) {
         return (<>
             <Toaster />
-            <Auth />
+            {
+                state?.showLogin ? (
+                    <Auth />
+                ) : (
+                    <>
+                        <Navbar />
+                        <Slider />
+                    </>
+                )
+            }
+
+
         </>)
     }
     return (
         <>
             <Toaster />
             <Navbar />
-            <div className='mt-16'>
-                < MessengerChat
+            <div className='mt-[-12px]'>
+                {/* < MessengerChat
                     pageId={pageID}
                     language="en_US"
                     themeColor={"#fc3468"}
@@ -69,10 +80,16 @@ const Layout = ({ children }) => {
                     onMessengerLoad={() => {
                         console.log("onMessengerLoad");
                     }}
-                />
+                /> */}
                 {children}
             </div>
         </>
     )
 }
 export default Layout
+
+
+// import { collection, query, where, getDocs } from "firebase/firestore";
+// import { useRouter } from 'next/router';
+// import { Slider } from '../slider/slider';
+

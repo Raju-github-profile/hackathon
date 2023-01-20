@@ -3,6 +3,7 @@ import GoogleMapReact from 'google-map-react';
 import {
     HiLocationMarker
 } from 'react-icons/hi';
+import { useSelector } from "react-redux";
 const zoom = 8;
 const items = [
     {
@@ -27,10 +28,13 @@ const items = [
     },
 ]
 export default function Map() {
-    const [coordinates, setCoordinates] = useState({
-        lat: 28,
-        long: 28
-    })
+    const state = useSelector((state) => state.Slice1)
+    const [coordinates, setCoordinates] = useState(state?.mapLocation)
+
+    // const [coordinates, setCoordinates] = useState({
+    //     lat: 28,
+    //     long: 28
+    // })
     const [data, setData] = useState(items)
     const [childClicked, setChildClicked] = useState(null)
     useEffect(() => {
@@ -46,7 +50,7 @@ export default function Map() {
     }, [])
     console.log({ childClicked })
     return (
-        <div style={{ height: '80vh', width: '100%' }}>
+        <div style={{ height: '100vh', width: '100%', }}>
             <GoogleMapReact
                 defaultCenter={coordinates}
                 defaultZoom={zoom}
@@ -59,22 +63,21 @@ export default function Map() {
                     setChildClicked(e)
                 }}
             >
-                {data &&
-                    data.map((item) => (
-                        <div
-                            lat={item.lat}
-                            lng={item.long}
-                        >
-                            <HiLocationMarker
-                                className="text-red-500"
-                                size={28}
-                            />
-                            <div className="w-fit rounded-lg bg-black p-1 text-white ">
-                                {item?.place}
-                            </div>
-
-                        </div>
-                    ))}
+                {/* {data &&
+                    data.map((item) => ( */}
+                <div
+                    lat={coordinates?.lat}
+                    lng={coordinates?.lng}
+                >
+                    <HiLocationMarker
+                        className="text-red-600"
+                        size={28}
+                    />
+                    {/* <div className="w-fit rounded-lg bg-black p-1 text-white ">
+                        {item?.place}
+                    </div> */}
+                </div>
+                {/* ))} */}
             </GoogleMapReact>
             <div
                 className="h-[17vh] flex items-center  w-full bg-red-500"

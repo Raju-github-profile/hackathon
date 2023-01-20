@@ -1,21 +1,37 @@
 import React, { useState } from 'react'
 import { createUserWithEmailAndPassword } from "firebase/auth";
-import { auth } from "../firebase/index"
+import { auth, db } from "../firebase/index"
 import { toast } from 'react-hot-toast';
+import { collection, query, where, getDocs, addDoc } from "firebase/firestore";
+
 const Signup = ({ setIsLogin }) => {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
+    const [fullName, setFullName] = useState('')
+    const [userCoordinates, setUserCoordinates] = useState(null)
+    const addMyLocation = () => {
+        const getAddress = async () => {
+            let pos = await new Promise((resolve, reject) => {
+                navigator?.geolocation?.getCurrentPosition(resolve, reject)
+            })
+            const { latitude, longitude } = pos.coords
+            console.log({ latitude, longitude })
+            setUserCoordinates({ lat: latitude, lng: longitude })
+        }
+        getAddress()
+    }
     const handleSignUp = async (e) => {
         e.preventDefault()
-        if (email && password) {
+        if (email && password && userCoordinates) {
             console.log(email, password)
             try {
                 const data = await createUserWithEmailAndPassword(auth, email, password)
-                toast.success('User created successfully')
+                toast.success('Registered successfully')
+                const check = await addDoc(collection(db, "registeredUsers"), { fullName, email, userCoordinates });
+                console.log({ check })
             } catch (error) {
                 console.log({ error })
                 toast.error('Something went wrong')
-
             }
         }
         else {
@@ -34,13 +50,21 @@ const Signup = ({ setIsLogin }) => {
                     <input type="hidden" name="remember" value="true" />
                     <div className="-space-y-px rounded-md shadow-sm">
                         <div className='my-4'>
+                            <label for="email-addre" className="sr-only">Full Name</label>
+                            <input id="email-addre" type="text" autocomplete="email" required className="relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                                placeholder="Full Name"
+                                onChange={(e) => setFullName(e.target.value)}
+                            />
+                        </div>
+                        <div className='mb-5'>
                             <label for="email-address" className="sr-only">Email address</label>
                             <input id="email-address" name="email" type="email" autocomplete="email" required className="relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
                                 placeholder="Email address"
                                 onChange={(e) => setEmail(e.target.value)}
                             />
                         </div>
-                        <div>
+
+                        <div className='my-4 pt-4'>
                             <label for="password" className="sr-only">Password</label>
                             <input id="password" name="password" type="password" autocomplete="current-password" required className="relative block w-full appearance-none rounded-none rounded-b-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm" placeholder="Password"
                                 onChange={(e) => setPassword(e.target.value)}
@@ -49,7 +73,7 @@ const Signup = ({ setIsLogin }) => {
                     </div>
                     <div className="flex items-center justify-between">
                         <div className="text-sm">
-                            {/* <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">Forgot your password?</a> */}
+                            <p href="#" onClick={addMyLocation} className="font-medium bg-slate-200 text-indigo-600 hover:text-indigo-500">Add Location</p>
                         </div>
                     </div>
                     <div>

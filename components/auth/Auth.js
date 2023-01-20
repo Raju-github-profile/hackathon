@@ -5,7 +5,7 @@ const Auth = () => {
     const [isLogin, setIsLogin] = useState(true)
     console.log(isLogin)
     return (
-        <div className='bg-purple-300 h-screen w-full'>
+        <div className=' h-screen w-full'>
             {isLogin ? (
                 <Login setIsLogin={setIsLogin} />
             ) : (

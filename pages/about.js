@@ -12,20 +12,6 @@ const about = () => {
     const state = useSelector((state) => state.Slice1)
     const dispatch = useDispatch()
     console.log(state?.userData)
-    useEffect(() => {
-        const getWeather = async () => {
-            console.log('......................')
-            const url = `https://api.openweathermap.org/data/2.5/weather?q=${city_name}&appid=${API_KEY}`
-            const data = await axios.get(url)
-            console.log({ data })
-        }
-        // try {
-        //     getWeather()
-        // } catch (error) {
-        //     console.log(error)
-        // }
-
-    }, [])
 
     const saveUser = async () => {
         try {
