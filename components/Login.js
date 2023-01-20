@@ -25,7 +25,7 @@ const Login = ({ setIsLogin }) => {
         <div className="transition-all ease-out duration-200 flex min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8 ">
             <div className="w-full max-w-md space-y-8 shadow-md p-5 py-14">
                 <div>
-                    <img className="mx-auto h-12 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="Your Company" />
+                    <img className="mx-auto h-40 w-auto" src="https://github.com/pandeyprashant123-coder/krishi_bazar/blob/main/src/images/logo.png?raw=true" alt="Your Company" />
                     <h2 className="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900">Login</h2>
 
                 </div>

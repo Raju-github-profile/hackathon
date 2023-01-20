@@ -83,6 +83,9 @@ const Layout = ({ children }) => {
                 />
                 {children}
             </div>
+            <div className="footer">
+                Copyright © 2023 All rights reserved by <b>Krishi Bazar</b>
+            </div>
         </>
     )
 }

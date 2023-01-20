@@ -23,40 +23,6 @@ const blog = () => {
             </div>
 
             <section className="bg-white border-b py-8">
-                {/* <div className="container max-w-5xl mx-auto m-8">
-                    <h1 className="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
-                        Blogs Title
-                    </h1>
-                    <div className="w-full mb-4">
-                        <div className="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
-                    </div>
-
-                    <div className="flex flex-wrap">
-                        <div className="w-5/6 sm:w-1/2 p-6 hover:shadow-md">
-                            <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
-                                Career Counselling
-                            </h3>
-                            <p className="text-gray-600 mb-8">
-                                Career counseling is advising people about exploring career and education choices and helping them make the right judgment by accessing their thoughts, ideas, and interests.
-                                <br />
-                                <br />
-                                Last updated:
-                                <a className="text-pink-500 underline" href="https://undraw.co/"> 16 days ago</a >
-                            </p>
-                        </div>
-
-                        <Link href={'/blog/career-counselling'}>
-                            <div className="w-full sm:w-1/2 p-6 mt-6">
-                                <img className="w-full md:w-4/5 z-50 rounded-lg hover:scale-105 cursor-pointer transition-all duration-150 ease-out" src="/aaa.webp" />
-                            </div>
-                        </Link>
-
-                    </div>
-
-
-                  
-
-                </div> */}
 
                 <div className="container max-w-5xl mx-auto m-8">
                     <h1 className="w-full my-2 text-5xl font-bold leading-tight text-center text-pink-600">
