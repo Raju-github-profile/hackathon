@@ -52,7 +52,7 @@ const Layout = ({ children }) => {
             <Toaster />
             <Navbar />
             <div className='mt-[-12px]'>
-                {/* < MessengerChat
+                < MessengerChat
                     pageId={pageID}
                     language="en_US"
                     themeColor={"#fc3468"}
@@ -80,7 +80,7 @@ const Layout = ({ children }) => {
                     onMessengerLoad={() => {
                         console.log("onMessengerLoad");
                     }}
-                /> */}
+                />
                 {children}
             </div>
         </>

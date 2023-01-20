@@ -36,29 +36,29 @@ export default function Home() {
     getUserData()
     console.log('flag point')
   }, [state.flag])
-  // useEffect(() => {
-  //   const alanBtn = require('@alan-ai/alan-sdk-web');
-  //   dispatch(handleAlan(
-  //     alanBtn({
-  //       key: alanKey,
-  //       onCommand: ({ command }) => {
-  //         console.log({ command })
-  //         if (command === 'introduce me') {
-  //           alert('i received command')
-  //         }
-  //         if (command === 'about page') {
-  //           router.push('/about')
-  //         }
-  //         if (command === 'about page') {
-  //           router.push('/about')
-  //         }
-  //         if (command == 'goBack') {
-  //           router.back()
-  //         }
-  //       }
-  //     })
-  //   ))
-  // }, []);
+  useEffect(() => {
+    const alanBtn = require('@alan-ai/alan-sdk-web');
+    dispatch(handleAlan(
+      alanBtn({
+        key: alanKey,
+        onCommand: ({ command }) => {
+          console.log({ command })
+          if (command === 'introduce me') {
+            alert('i received command')
+          }
+          if (command === 'order') {
+            
+          }
+          if (command === 'about page') {
+            router.push('/about')
+          }
+          if (command == 'goBack') {
+            router.back()
+          }
+        }
+      })
+    ))
+  }, []);
   useEffect(() => {
     if (state?.alan && !state?.count) {
       state?.alan?.activate()
