@@ -8,7 +8,7 @@ const blog = () => {
                 <div className="pt-24">
                     <div className="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
                         <div className="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
-                            <p className="uppercase text-5xl lg:px-6 font-bold tracking-loose w-full text-purple-200">Looking for Blogs ?</p>
+                            <p className="uppercase text-5xl lg:px-1 font-bold tracking-loose w-full text-purple-200">Looking for Blogs ?</p>
                             <h1 className="text-slate-200 font-google my-4 lg:px-7 text-2xl leading-tight">
                                 The first step in blogging is not writing them but reading them.
                             </h1>
@@ -60,7 +60,7 @@ const blog = () => {
 
                 <div className="container max-w-5xl mx-auto m-8">
                     <h1 className="w-full my-2 text-5xl font-bold leading-tight text-center text-pink-600">
-                        More Blogs
+                        Blogs
                     </h1>
                     <div className="w-full mb-4">
                         <div className="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
@@ -68,10 +68,13 @@ const blog = () => {
                     <div className="flex flex-wrap">
                         <div className="w-5/6 sm:w-1/2 p-6  hover:shadow-md">
                             <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
-                                Pearl Harbour Attack
+                                Safe use of Insecticides
                             </h3>
                             <p className="text-gray-600 mb-8">
-                                During World War II (WWII), when the expansion of new land and interference in new countries were at an all-time high, military war and human exploitation was commonplace
+                            Lorem ipsum dolor sit amet, consectetur adip   Lorem ipsum dolor sit amet, consectetur adip
+                              Lorem ipsum dolor sit amet, consectetur adip   Lorem ipsum dolor sit amet, consectetur adip
+                              Lorem ipsum dolor sit amet, consectetur adip   Lorem ipsum dolor sit amet, consectetur adip
+                              Lorem ipsum dolor sit amet, consectetur adip   Lorem ipsum dolor sit amet, consectetur adip
                                 <br />
                                 <br />
                                 Last updated:
@@ -94,10 +97,13 @@ const blog = () => {
                         <div className="w-full sm:w-1/2 p-6 mt-6">
                             <div className="align-middle hover:shadow-md p-4">
                                 <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
-                                    Web 3.0
+                                    NPK Fertilizers
                                 </h3>
                                 <p className="text-gray-600 mb-8">
-                                    Along with the concept of web3.0, the concept of decentralization has flourished. As the basic concept of web3.0 is decentralization and blockchain, adding pile to the same concept
+                                Lorem ipsum dolor sit amet, consectetur adip   Lorem ipsum dolor sit amet, consectetur adip
+                              Lorem ipsum dolor sit amet, consectetur adip   Lorem ipsum dolor sit amet, consectetur adip
+                              Lorem ipsum dolor sit amet, consectetur adip   Lorem ipsum dolor sit amet, consectetur adip
+                              Lorem ipsum dolor sit amet, consectetur adip   Lorem ipsum dolor sit amet, consectetur adip
                                     <br />
                                     <br />
                                     Last updated:
@@ -118,10 +124,13 @@ const blog = () => {
                     <div className="flex flex-wrap">
                         <div className="w-5/6 sm:w-1/2 p-6  hover:shadow-md">
                             <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
-                                Pearl Harbour Attack
+                                Modern Agriculture
                             </h3>
                             <p className="text-gray-600 mb-8">
-                                During World War II (WWII), when the expansion of new land and interference in new countries were at an all-time high, military war and human exploitation was commonplace
+                              Lorem ipsum dolor sit amet, consectetur adip   Lorem ipsum dolor sit amet, consectetur adip
+                              Lorem ipsum dolor sit amet, consectetur adip   Lorem ipsum dolor sit amet, consectetur adip
+                              Lorem ipsum dolor sit amet, consectetur adip   Lorem ipsum dolor sit amet, consectetur adip
+                              Lorem ipsum dolor sit amet, consectetur adip   Lorem ipsum dolor sit amet, consectetur adip
                                 <br />
                                 <br />
                                 Last updated:
@@ -144,10 +153,13 @@ const blog = () => {
                         <div className="w-full sm:w-1/2 p-6 mt-6">
                             <div className="align-middle hover:shadow-md p-4">
                                 <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
-                                    Web 3.0
+                                    Irrigation
                                 </h3>
                                 <p className="text-gray-600 mb-8">
-                                    Along with the concept of web3.0, the concept of decentralization has flourished. As the basic concept of web3.0 is decentralization and blockchain, adding pile to the same concept
+                                Lorem ipsum dolor sit amet, consectetur adip   Lorem ipsum dolor sit amet, consectetur adip
+                              Lorem ipsum dolor sit amet, consectetur adip   Lorem ipsum dolor sit amet, consectetur adip
+                              Lorem ipsum dolor sit amet, consectetur adip   Lorem ipsum dolor sit amet, consectetur adip
+                              Lorem ipsum dolor sit amet, consectetur adip   Lorem ipsum dolor sit amet, consectetur adip
                                     <br />
                                     <br />
                                     Last updated:
@@ -173,88 +185,7 @@ const blog = () => {
 
 
 
-            <section className="bg-white border-b py-8">
-                <div className="container mx-auto flex flex-wrap pt-4 pb-12">
-                    <h1 className="w-full my-2 text-5xl font-bold leading-tight text-center text-pink-600">
-                        Title
-                    </h1>
-                    <div className="w-full mb-4">
-                        <div className="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
-                    </div>
-                    <div className="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
-                        <div className="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
-                            <a href="#" className="flex flex-wrap no-underline hover:no-underline">
-                                <p className="w-full text-gray-600 text-xs my-4 md:text-sm px-6">
-                                    Lorem Title
-                                </p>
-                                <div className="w-full font-bold text-xl text-gray-800 px-6">
-                                    Lorem ipsum dolor sit amet.
-                                </div>
-                                <p className="text-gray-800 text-base px-6 mb-5 my-3">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit
-                                    amet ligula.
-                                </p>
-                            </a>
-                        </div>
-                        <div className="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-                            <div className="flex items-center justify-start">
-                                <button
-                                    className="mx-auto lg hover:scale-105 cursor-pointer transition-all duration-150 ease-out:mx-0 hover:underline gradient text-pink-600 font-bold rounded-full my-6 py-4 px-8 shadow-lg hover:scale-105 cursor-pointer transition-all duration-150 ease-out focus:outline-none focus:shadow-outline transform cursor-pointer transition hover:scale-105 cursor-pointer transition-all duration-150 ease-out duration-300 ease-in-out">
-                                    Read me
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
-                        <div className="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
-                            <a href="#" className="flex flex-wrap no-underline hover:no-underline">
-                                <p className="w-full my-2 text-gray-600 text-xs md:text-sm px-6">
-                                    Lorem Title
-                                </p>
-                                <div className="w-full font-bold text-xl text-gray-800 px-6">
-                                    Lorem ipsum dolor sit amet.
-                                </div>
-                                <p className="text-gray-800 text-base px-6 mb-5">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit
-                                    amet ligula.
-                                </p>
-                            </a>
-                        </div>
-                        <div className="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-                            <div className="flex items-center justify-center">
-                                <button
-                                    className="mx-auto lg hover:scale-105 cursor-pointer transition-all duration-150 ease-out:mx-0 hover:underline gradient text-pink-600 font-bold rounded-full my-6 py-4 px-8 shadow-lg hover:scale-105 cursor-pointer transition-all duration-150 ease-out focus:outline-none focus:shadow-outline transform cursor-pointer transition hover:scale-105 cursor-pointer transition-all duration-150 ease-out duration-300 ease-in-out">
-                                    Read me
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
-                        <div className="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
-                            <a href="#" className="flex flex-wrap no-underline hover:no-underline">
-                                <p className="w-full text-gray-600 text-xs md:text-sm px-6">
-                                    Lorem Title
-                                </p>
-                                <div className="w-full font-bold text-xl text-gray-800 px-6">
-                                    Lorem ipsum dolor sit amet.
-                                </div>
-                                <p className="text-gray-800 text-base px-6 mb-5">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit
-                                    amet ligula.
-                                </p>
-                            </a>
-                        </div>
-                        <div className="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-                            <div className="flex items-center justify-end">
-                                <button
-                                    className="mx-auto lg hover:scale-105 cursor-pointer transition-all duration-150 ease-out:mx-0 mr-8 gradient text-pink-600 font-bold rounded-full my-6 py-4 px-8 shadow-lg hover:scale-105 cursor-pointer transition-all duration-150 ease-out focus:outline-none focus:shadow-outline transform cursor-pointer transition hover:scale-105 cursor-pointer transition-all duration-150 ease-out duration-300 ease-in-out">
-                                    Read me
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+           
             {/* <section className="bg-gray-100 py-8">
             <div className="container mx-auto px-2 pt-4 pb-12 text-gray-800">
                 <h1 className="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">

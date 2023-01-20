@@ -31,7 +31,7 @@ const adminpanel = () => {
     const handleReject = () => { }
 
     return (
-        <div className='bg-blue-50 mt-[-12vh]'>
+        <div className='bg-blue-50 '>
             {/* <p onClick={handleAccept} className='bg-green-600 my-4 text-white'>Click me</p> */}
             <div className='justify-center items-center flex pt-8'>
                 <p className='text-5xl text-black font-bold'>Admin Dashboard</p>

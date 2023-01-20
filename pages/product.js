@@ -21,23 +21,28 @@ const product = () => {
           <option value="">Large</option>
         </select> */}
       </div>
-      <div className='mt-8'>
+      <div className='mt-8 px-5'>
         <div>
           <p className='text-2xl font-bold '>Vegetables</p>
           <div className="farmer_cards">
-
             {vegetables?.map(({ productName, productPrice, category }) => (
               <Link href={`/product-detail/${productName}`}>
-                <div class="max-w-sm rounded overflow-hidden shadow-lg hover:scale-105 transition-all ease-out duration-150">
-                  <img class="w-full" src="https://www.foodprocessing-technology.com/wp-content/uploads/sites/19/2017/10/woman-farming.jpg" alt="Sunset in the mountains" />
+                <div class="max-w-sm rounded overflow-hidden shadow-md  hover:scale-105 transition-all ease-out duration-150">
+                  <img class="w-full" src="https://www.shutterstock.com/image-photo/assorted-organic-vegetables-fruits-wicker-260nw-1720876849.jpg
+" alt="Sunset in the mountains" />
                   <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2">{productName}</div>
+                    <div class="font-bold text-xl mb-2">{productName.toUpperCase()}</div>
+                    <div class="font-bold text-xl mb-2">Rs. {productPrice}</div>
                     <div class="text-gray-700 text-base">
-                      {productPrice}
+                      Rice, (Oryza sativa), edible starchy cereal grain and the grass plant (family Poaceae) by which it is produced. Roughly.. ..
                     </div>
-                  
                   </div>
+                  <p></p>
+                  <p></p>
+                  <div class="px-6 pt-4 pb-2">
+                    <span class="inline-block bg-gray-200 px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Order Now</span>
 
+                  </div>
                 </div>
               </Link>
             ))}
@@ -50,12 +55,21 @@ const product = () => {
 
             {grains?.map(({ productName, productPrice, category }) => (
               <Link href={`/product-detail/${productName}`}>
-                <div className="farmer_card">
-                  <img className='farmer_img' src={Nilesh} alt="" />
-                  <div className="farmer_detail">
-                    <h3 className="name">{productName}</h3>
-                    <div className="rating">stars</div>
-                    <div>Price : Rs {productPrice}/quintal</div>
+
+                <div class="max-w-sm rounded overflow-hidden shadow-md hover:scale-105 transition-all ease-out duration-150">
+                  <img class="w-full" src="https://www.health.com/thmb/fx7NMvBr5socZxi9L4PdZ4GjaT8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/whole-grains-what-are-they-400x400-9ddbcbaf02ef40d18cb8fb29faa27f13.jpg" alt="Sunset in the mountains" />
+                  <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">{productName.toUpperCase()}</div>
+                    <div class="font-bold text-xl mb-2">Rs. {productPrice}</div>
+                    <div class="text-gray-700 text-base">
+                      Rice, (Oryza sativa), edible starchy cereal grain and the grass plant (family Poaceae) by which it is produced. Roughly.. ..
+                    </div>
+                  </div>
+                  <p></p>
+                  <p></p>
+                  <div class="px-6 pt-4 pb-2">
+                    <span class="inline-block bg-gray-200 px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Order Now</span>
+
                   </div>
                 </div>
               </Link>
@@ -69,12 +83,22 @@ const product = () => {
 
             {fruits?.map(({ productName, productPrice, category }) => (
               <Link href={`/product-detail/${productName}`}>
-                <div className="farmer_card">
-                  <img className='farmer_img' src={Nilesh} alt="" />
-                  <div className="farmer_detail">
-                    <h3 className="name">{productName}</h3>
-                    <div className="rating">stars</div>
-                    <div>Price : Rs {productPrice}/quintal</div>
+              
+
+                <div class="max-w-sm rounded overflow-hidden shadow-md hover:scale-105 transition-all ease-out duration-150">
+                  <img class="w-full" src="https://images.herzindagi.info/image/2022/May/summer-fruits-to-have.jpg" alt="Sunset in the mountains" />
+                  <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">{productName.toUpperCase()}</div>
+                    <div class="font-bold text-xl mb-2">Rs. {productPrice}</div>
+                    <div class="text-gray-700 text-base">
+                      Rice, (Oryza sativa), edible starchy cereal grain and the grass plant (family Poaceae) by which it is produced. Roughly.. ..
+                    </div>
+                  </div>
+                  <p></p>
+                  <p></p>
+                  <div class="px-6 pt-4 pb-2">
+                    <span class="inline-block bg-gray-200 px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Order Now</span>
+
                   </div>
                 </div>
 

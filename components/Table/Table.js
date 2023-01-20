@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Table = ({ item }) => {
-    console.log({item})
+    console.log({ item })
     return (
         <tbody class="divide-y divide-gray-100 border-t border-gray-100">
             <tr class="hover:bg-gray-50">

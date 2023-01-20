@@ -73,17 +73,31 @@ export default function Map() {
                         className="text-red-600"
                         size={28}
                     />
-                    {/* <div className="w-fit rounded-lg bg-black p-1 text-white ">
-                        {item?.place}
-                    </div> */}
+
+                    <div className="w-fit rounded-lg bg-red-500 p-1 text-white ">
+                        Seller Location
+                    </div>
+                </div>
+
+                <div
+                    lat={26}
+                    lng={87}
+                >
+ <HiLocationMarker
+                        className="text-yellow-600"
+                        size={28}
+                    />
+                    <div className="w-fit rounded-lg bg-yellow-500 p-1 text-white ">
+                        Buyer Location
+                    </div>
                 </div>
                 {/* ))} */}
             </GoogleMapReact>
-            <div
+            {/* <div
                 className="h-[17vh] flex items-center  w-full bg-red-500"
             >
                 <p className="text-white text-5xl ml-12">Some Famous Tourists Areas</p>
-            </div>
+            </div> */}
         </div>
     );
 }
