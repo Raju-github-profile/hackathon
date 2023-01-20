@@ -197,6 +197,7 @@ import { toast } from 'react-hot-toast'
 import { FaUser } from 'react-icons/fa'
 import { useSelector, useDispatch } from 'react-redux'
 import { changeLogin } from '@/redux/slices/slice1'
+import { useRouter } from 'next/router'
 
 const links = [
   {
@@ -255,6 +256,7 @@ const Navbar = () => {
   const state = useSelector((state) => state.Slice1)
   const user = state?.auth?.uid
   const dispatch = useDispatch()
+  const router = useRouter()
   const handleLogOut = async () => {
     var flag = false;
     try {
@@ -275,7 +277,8 @@ const Navbar = () => {
     dispatch(changeLogin())
   }
   return (
-    <div className="header">
+    <div className={`${router.pathname === '/adminpanel' ? 'hidden' : ''}`
+    }>
       <div className="container">
         <div className="navbar space-x-32">
           <div className="logo">

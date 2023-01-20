@@ -47,7 +47,7 @@ export default function Home() {
             alert('i received command')
           }
           if (command === 'order') {
-            
+
           }
           if (command === 'about page') {
             router.push('/about')
@@ -71,6 +71,7 @@ export default function Home() {
     }
   }, [state?.alan])
   useEffect(() => {
+    console.log(state?.auth?.email)
     const getFullName = async () => {
       const q = query(collection(db, "registeredUsers"), where("email", "==", state?.auth?.email));
       const querySnapshot = await getDocs(q);

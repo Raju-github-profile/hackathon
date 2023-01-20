@@ -1,6 +1,7 @@
 import React from 'react'
 
 const Table = ({ item }) => {
+    console.log({item})
     return (
         <tbody class="divide-y divide-gray-100 border-t border-gray-100">
             <tr class="hover:bg-gray-50">
@@ -14,7 +15,7 @@ const Table = ({ item }) => {
                         <span class="absolute right-0 bottom-0 h-2 w-2 rounded-full bg-green-400 ring ring-white"></span>
                     </div>
                     <div class="text-sm">
-                        <div class="font-medium text-gray-700">Ram Karki</div>
+                        <div class="font-medium text-gray-700">{item?.farmerOrSeller?.farmerName}</div>
                         <div class="text-gray-400">{item?.farmerOrSeller?.farmerAddress}</div>
                     </div>
                 </th>

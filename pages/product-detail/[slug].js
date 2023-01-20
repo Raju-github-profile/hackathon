@@ -13,23 +13,24 @@ const slug = () => {
     const router = useRouter()
     const [isOrdered, setIsOrdered] = useState(false)
     const dispatch = useDispatch()
-
+    console.log({ state })
     const { uid } = state?.auth
-    const Email = state?.auth?.emails
+    const Email = state?.auth?.email
     const fullName = state?.fullName?.fullName
     const userCoordinates = state?.fullName?.userCoordinates
 
     console.log({ uid, Email, fullName, userCoordinates })
     const slug = router?.query?.slug
+    console.log({ slug })
+    console.log(state?.userData)
     const filterData = state?.userData?.filter((item) => item?.productName == slug)
-    const { farmerName, farmerPhone, productName, productPrice, productQuantity, farmerCoordinates, farmerAddress, category, email } = filterData[0]
+    console.log({ filterData })
+    // const { farmerName, farmerPhone, productName, productPrice, productQuantity, farmerCoordinates, farmerAddress, category, email } = filterData[0]
 
     const handleLocation = () => {
         dispatch(handleMapLocation(userCoordinates))
         router.push('/map')
     }
-
-
 
     const handleOrder = async () => {
         try {
@@ -50,15 +51,10 @@ const slug = () => {
                     <img src={'/hero.png'} width="100%" id="product-img" />
                 </div>
                 <div className="cols">
-                    <p>{farmerName}</p>
-                    <h1>{productName}</h1>
-                    <h4>Rs. {productPrice}</h4>
-                    {/* <select name="" id="">
-                        <option value="">Select Quantity</option>
-                        <option value="">small</option>
-                        <option value="">Medium</option>
-                        <option value="">Large</option>
-                    </select> */}
+                    <p>{filterData[0]?.farmerName}</p>
+                    <h1>{filterData[0]?.productName}</h1>
+                    <h4>Rs. {filterData[0]?.productPrice}</h4>
+
                     {isOrdered ? (
                         <p onClick={handleOrder} href="#" className="p-2 bg-green-400 text-white font-medium">Thank you for Ordering...</p>
 
